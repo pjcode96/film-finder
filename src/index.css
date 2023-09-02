@@ -1,0 +1,42 @@
+:root {
+  --primary: #23204B;
+  --secondary: #B30F27;
+  --main-font: 'Outfit', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 2rem;
+  font-family: var(--main-font);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+[class*="container"],
+main {
+  width: min(95%, 120rem);
+  margin: 3rem auto;
+}
+
+body {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+h1 {
+  color: #B30F27;
+}
