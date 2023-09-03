@@ -1,6 +1,8 @@
 :root {
-  --primary: #23204B;
-  --secondary: #B30F27;
+  --primary: #222831;
+  --secondary: #393E46;
+  --teal: #00ADB5;
+  --grey: #EEEEEE;
   --main-font: 'Outfit', sans-serif;
 }
 
@@ -34,7 +36,7 @@ main {
 
 body {
   background: var(--primary);
-  color: var(--secondary);
+  color: var(--grey);
 }
 
 h1 {

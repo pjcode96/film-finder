@@ -2,9 +2,9 @@
 function Movie({ movie }) {
   return (
     <div className="movie">
-      <h3 className='movie_title'>{movie?.title}</h3>
+      <h3 className='movie__title'>{movie?.title}</h3>
       <img className='movie__poster' alt={`Poster from ${movie?.title} movie`} src={movie?.poster} />
-      <p>Año: {movie?.year}</p>
+      <p className='movie__year'>Año: {movie?.year}</p>
     </div>
   )
 }

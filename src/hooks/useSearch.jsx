@@ -7,7 +7,12 @@ export function useSearch() {
 
   useEffect(
     () => {
-      if (!isFirstRender && search === '') {
+      if (isFirstRender.current) {
+        isFirstRender.current = search === ''
+        return
+      }
+
+      if (search === '') {
         setError('No se puede buscar una película vacía')
         return
       }
@@ -22,5 +27,5 @@ export function useSearch() {
     }, [search]
   )
 
-  return { error, search, setSearch }
+  return { error, search, isFirstRender, setSearch }
 }
